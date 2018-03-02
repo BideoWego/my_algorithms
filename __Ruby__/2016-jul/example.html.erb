@@ -1,0 +1,14 @@
+
+
+
+
+
+<%= form_tag(
+  post.persisted? ? post_path(post) : posts_path,
+  :method => post.persisted? ? :put : :post
+) do %>
+
+  <%# form..... %>
+
+<% end %>
+
